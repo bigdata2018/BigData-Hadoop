@@ -6,7 +6,7 @@
 <nav>
 <a href="#一、环境搭建">一、环境搭建</a><br/>
 <a href="#二、Hadoop入门">二、Hadoop入门</a><br/>
-<a href="#三、Hadoop高级">三、Hadoop高级</a><br/>
+<a href="#https://github.com/bigdata2018/BigData-Hadoop#%E4%B8%89hadoop%E9%AB%98%E7%BA%A7">三、Hadoop高级</a><br/>
 </nav>
 
 
