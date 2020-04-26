@@ -26,15 +26,15 @@ HDFS上每个文件都要在NameNode上建立一个索引，这个索引的大�
 
 （3）在MapReduce处理时，可采用CombineTextInputFormat提高效率。
 
-![Hadoop优化6-9](E:\BigData-Hadoop\picture\Hadoop优化6-9.png)
+![Hadoop优化6-9](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/Hadoop%E4%BC%98%E5%8C%966-9.png)
 
-![Hadoop优化6-10](E:\BigData-Hadoop\picture\Hadoop优化6-10.png)
+![Hadoop优化6-10](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/Hadoop%E4%BC%98%E5%8C%966-10.png)
 
 ## 二、MapReduce 优化
 
 ### 2.1 MapReduce 跑的慢的原因
 
-![Hadoop优化6-11](E:\BigData-Hadoop\picture\Hadoop优化6-11.png)
+![Hadoop优化6-11](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/Hadoop%E4%BC%98%E5%8C%966-11.png)
 
 ### 2.2 MapReduce优化方法
 
@@ -44,27 +44,27 @@ MapReduce优化方法主要从六个方面考虑：数据输入、Map阶段、Re
 
 #### 2.2.1 数据输入
 
-![Hadoop优化6-2](E:\BigData-Hadoop\picture\Hadoop优化6-2.png)
+![Hadoop优化6-2](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/Hadoop%E4%BC%98%E5%8C%966-2.png)
 
 #### 2.2.2 Map阶段
 
-![Hadoop优化6-3](E:\BigData-Hadoop\picture\Hadoop优化6-3.png)
+![Hadoop优化6-3](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/Hadoop%E4%BC%98%E5%8C%966-3.png)
 
 #### 2.2.3 Reduce阶段
 
-![Hadoop优化6-4](E:\BigData-Hadoop\picture\Hadoop优化6-4.png)
+![Hadoop优化6-4](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/Hadoop%E4%BC%98%E5%8C%966-4.png)
 
-![Hadoop优化6-5](E:\BigData-Hadoop\picture\Hadoop优化6-5.png)
+![Hadoop优化6-5](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/Hadoop%E4%BC%98%E5%8C%966-5.png)
 
 #### 2.2.4 I/O传输
 
-![Hadoop优化6-6](E:\BigData-Hadoop\picture\Hadoop优化6-6.png)
+![Hadoop优化6-6](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/Hadoop%E4%BC%98%E5%8C%966-6.png)
 
 #### 2.2.5 数据倾斜问题
 
-![Hadoop优化6-7](E:\BigData-Hadoop\picture\Hadoop优化6-7.png)
+![Hadoop优化6-7](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/Hadoop%E4%BC%98%E5%8C%966-7.png)
 
-![Hadoop优化6-8](E:\BigData-Hadoop\picture\Hadoop优化6-8.png)
+![Hadoop优化6-8](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/Hadoop%E4%BC%98%E5%8C%966-8.png)
 
 ## 三 、常用的调优参数
 
