@@ -57,7 +57,7 @@
 
 ### 1.2 MapReduce 核心编程思想
 
-![MapReduce1-5](E:\BigData-Hadoop\picture\MapReduce1-5.png)
+![MapReduce1-5](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/MapReduce1-5.png)
 
 （1）分布式的运算程序往往需要分成至少2个阶段。
 
@@ -488,7 +488,7 @@ public class WordcountDriver {
 
 (3) 编辑任务配置
 
-![MapReduce1-10](E:\BigData-Hadoop\picture\MapReduce1-10.png)
+![MapReduce1-10](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/MapReduce1-10.png)
 
 (4) 提交并在集群查看结果
 
@@ -498,9 +498,9 @@ public class WordcountDriver {
 
 ### 2.1 序列化概述
 
-![MapReduce2-1](E:\BigData-Hadoop\picture\MapReduce2-1.png)
+![MapReduce2-1](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/MapReduce2-1.png)
 
-![MapReduce2-2](E:\BigData-Hadoop\picture\MapReduce2-2.png)
+![MapReduce2-2](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/MapReduce2-2.png)
 
 
 
@@ -812,7 +812,7 @@ args = new String[] { "e:/input/inputflow", "e:/output1" };
 
 ### 3.1  InputFormat数据输入
 
-![MapReduce3-1](E:\BigData-Hadoop\picture\MapReduce3-1.png)
+![MapReduce3-1](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/MapReduce3-1.png)
 
 
 
@@ -832,7 +832,7 @@ MapTask的并行度决定Map阶段的任务处理并发度，进而影响到整�
 
 MapTask并行度决定机制图：
 
-![MapReduce3-2](E:\BigData-Hadoop\picture\MapReduce3-2.png)
+![MapReduce3-2](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/MapReduce3-2.png)
 
 **3.1.2 Job提交流程源码和切片源码详解**
 
@@ -877,13 +877,13 @@ status = submitClient.submitJob(jobId, submitJobDir.toString(), job.getCredentia
 
 Job提交流程源码分析图：
 
-![MapReduce3-3](E:\BigData-Hadoop\picture\MapReduce3-3.png)
+![MapReduce3-3](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/MapReduce3-3.png)
 
 2．FileInputFormat切片源码解析(input.getSplits(job))
 
 FileInputFormat切片机制图：
 
-![MapReduce3-4](E:\BigData-Hadoop\picture\MapReduce3-4.png)
+![MapReduce3-4](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/MapReduce3-4.png)
 
 
 
@@ -891,27 +891,27 @@ FileInputFormat切片机制图：
 
 FileInputFormat切片机制：
 
-![MapReduce3-5](E:\BigData-Hadoop\picture\MapReduce3-5.png)
+![MapReduce3-5](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/MapReduce3-5.png)
 
 FileInputFormat切片大小参数配置：
 
-![MapReduce3-6](E:\BigData-Hadoop\picture\MapReduce3-6.png)
+![MapReduce3-6](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/MapReduce3-6.png)
 
 
 
 **3.1.4 FileInputFormat实现类**
 
-![MapReduce3-7](E:\BigData-Hadoop\picture\MapReduce3-7.png)
+![MapReduce3-7](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/MapReduce3-7.png)
 
-![MapReduce3-8](E:\BigData-Hadoop\picture\MapReduce3-8.png)
+![MapReduce3-8](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/MapReduce3-8.png)
 
 KeyValueTextInputFormat：
 
-![MapReduce3-9](E:\BigData-Hadoop\picture\MapReduce3-9.png)
+![MapReduce3-9](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/MapReduce3-9.png)
 
 NLineInputFormat：
 
-![MapReduce3-10](E:\BigData-Hadoop\picture\MapReduce3-10.png)
+![MapReduce3-10](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/MapReduce3-10.png)
 
 
 
