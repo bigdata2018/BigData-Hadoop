@@ -1,24 +1,24 @@
 # Yarn--资源调度器
 
 <nav>
-<a href="#一、Yarn基本架构">一、Yarn基本架构</a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#1.1 Yarn简介">1.1 Yarn简介</a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#1.2 Yarn基本架构">1.2 Yarn基本架构</a><br/>
-<a href="#二、Yarn工作机制">二、Yarn工作机制</a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#2.1 Yarn运行机制">2.1 Yarn运行机制</a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#2.2 工作机制详解">2.2 工作机制详解（Writable）</a><br/>
-<a href="#三、作业提交全过程">三、作业提交全过程</a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#3.1 作业提交过程之YARN">3.1 作业提交过程之YARN</a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#3.2 作业提交过程之MapReduce">3.2 作业提交过程之MapReduce</a><br/>
-<a href="#四、资源调度器">四、资源调度器</a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#4.1 先进先出调度器（FIFO）">4.1 先进先出调度器（FIFO）</a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#4.2 容量调度器（Capacity Scheduler）">4.2 容量调度器（Capacity Scheduler）</a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#4.3 公平调度器（Fair Scheduler）">4.3 公平调度器（Fair Scheduler）</a><br/>
-<a href="#五、容量调度器多队列提交案例">五、容量调度器多队列提交案例</a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#5.1 需求">5.1 需求</a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#5.2 配置多队列的容量调度器">5.2 配置多队列的容量调度器</a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#5.3 向Hive队列提交任务">5.3 向Hive队列提交任务</a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#5.4 任务的推测执行">5.4 任务的推测执行</a><br/>
+<a href="#一yarn基本架构">一、Yarn基本架构</a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#11-yarn简介">1.1 Yarn简介</a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#12-yarn基本架构">1.2 Yarn基本架构</a><br/>
+<a href="#二yarn工作机制">二、Yarn工作机制</a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#21-yarn运行机制">2.1 Yarn运行机制</a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#22-工作机制详解">2.2 工作机制详解（Writable）</a><br/>
+<a href="#三作业提交全过程">三、作业提交全过程</a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#31-作业提交过程之yarn">3.1 作业提交过程之YARN</a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#32-作业提交过程之mapreduce">3.2 作业提交过程之MapReduce</a><br/>
+<a href="#四资源调度器">四、资源调度器</a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#41-先进先出调度器fifo">4.1 先进先出调度器（FIFO）</a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#42-容量调度器capacity-scheduler">4.2 容量调度器（Capacity Scheduler）</a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#43-公平调度器fair-scheduler">4.3 公平调度器（Fair Scheduler）</a><br/>
+<a href="#五容量调度器多队列提交案例">五、容量调度器多队列提交案例</a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#51-需求">5.1 需求</a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#52-配置多队列的容量调度器">5.2 配置多队列的容量调度器</a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#53-向hive队列提交任务">5.3 向Hive队列提交任务</a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#54-任务的推测执行">5.4 任务的推测执行</a><br/>
 </nav>
 
 
@@ -36,7 +36,7 @@ Yarn是一个资源调度平台，负责为运算程序提供服务器运算资�
 
 YARN主要由ResourceManager、NodeManager、ApplicationMaster和Container等组件构成，如图
 
-![Yarn5-1](E:\BigData-Hadoop\picture\Yarn5-1.png)
+![Yarn5-1](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/Yarn5-1.png)
 
 
 
@@ -44,7 +44,7 @@ YARN主要由ResourceManager、NodeManager、ApplicationMaster和Container等组
 
 ### 2.1 Yarn运行机制
 
-![Yarn5-2](E:\BigData-Hadoop\picture\Yarn5-2.png)
+![Yarn5-2](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/Yarn5-2.png)
 
 ### 2.2 工作机制详解
 
@@ -84,7 +84,7 @@ YARN主要由ResourceManager、NodeManager、ApplicationMaster和Container等组
 
 ### 3.1 作业提交过程之YARN
 
-![Yarn5-3](E:\BigData-Hadoop\picture\Yarn5-3.png)
+![Yarn5-3](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/Yarn5-3.png)
 
 作业提交全过程详解
 
@@ -138,7 +138,7 @@ YARN中的任务将其进度和状态(包括counter)返回给应用管理器, �
 
 ### 3.2 作业提交过程之MapReduce
 
-![Yarn5-4](E:\BigData-Hadoop\picture\Yarn5-4.png)
+![Yarn5-4](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/Yarn5-4.png)
 
 
 
@@ -158,17 +158,17 @@ YARN中的任务将其进度和状态(包括counter)返回给应用管理器, �
 
 ### 4.1 先进先出调度器（FIFO）
 
-![Yarn5-5](E:\BigData-Hadoop\picture\Yarn5-5.png)
+![Yarn5-5](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/Yarn5-5.png)
 
 ### 4.2 容量调度器（Capacity Scheduler）
 
-![Yarn5-6](E:\BigData-Hadoop\picture\Yarn5-6.png)
+![Yarn5-6](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/Yarn5-6.png)
 
 ### 4.3 公平调度器（Fair Scheduler）
 
-![Yarn5-7](E:\BigData-Hadoop\picture\Yarn5-7.png)
+![Yarn5-7](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/Yarn5-7.png)
 
-![Yarn5-8](E:\BigData-Hadoop\picture\Yarn5-8.png)
+![Yarn5-8](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/Yarn5-8.png)
 
 ## 五、容量调度器多队列提交案例
 
@@ -231,7 +231,7 @@ Yarn默认的容量调度器是一条单队列的调度器，在实际使用中�
 
 在配置完成后，重启Yarn，就可以看到两条队列：
 
-![Yarn5-9](E:\BigData-Hadoop\picture\Yarn5-9.png)
+![Yarn5-9](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/Yarn5-9.png)
 
 ### 5.3 向Hive队列提交任务
 
@@ -276,7 +276,7 @@ public class WcDrvier {
 
 这样，这个任务在集群提交时，就会提交到hive队列：
 
-![Yarn5-10](E:\BigData-Hadoop\picture\Yarn5-10.png)
+![Yarn5-10](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/Yarn5-10.png)
 
 
 
@@ -322,4 +322,4 @@ public class WcDrvier {
 
 **5．算法原理，如图**
 
-![Yarn5-11](E:\BigData-Hadoop\picture\Yarn5-11.png)
+![Yarn5-11](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/Yarn5-11.png)

@@ -27,16 +27,16 @@
 
 #### [1.HDFS--分布式文件存储系统 ](https://github.com/bigdata2018/BigData-Hadoop/blob/master/notes/Hadoop-HDFS.md)
 
-#### [2.MapReduce--分布式计算框架](https://github.com/bigdata2018/BigData-Hadoop/blob/master/notes/Hadoop-HDFS.md)
+#### [2.MapReduce--分布式计算框架](https://github.com/bigdata2018/BigData-Hadoop/blob/master/notes/Hadoop-MapReduce.md)
 
-#### [3.YARN--资源调度器](https://github.com/bigdata2018/BigData-Hadoop/blob/master/notes/Hadoop-HDFS.md)
+#### [3.YARN--资源调度器](https://github.com/bigdata2018/BigData-Hadoop/blob/master/notes/Hadoop-Yarn.md)
 
 
 
 ## 三、Hadoop高级
 
-#### [1.Hadoop源码解读]()
+#### [1.Hadoop源码解读](https://github.com/bigdata2018/BigData-Hadoop/blob/master/notes/Hadoop%E6%BA%90%E7%A0%81%E8%A7%A3%E8%AF%BB.md)
 
-#### [2.Hadoop性能调优]()
+#### [2.Hadoop性能调优](https://github.com/bigdata2018/BigData-Hadoop/blob/master/notes/Hadoop%E6%80%A7%E8%83%BD%E8%B0%83%E4%BC%98.md)
 
 #### [3.常见BUG总结]()
