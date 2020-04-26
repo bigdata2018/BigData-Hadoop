@@ -1,7 +1,7 @@
 # MapReduce--分布式计算框架
 
 <nav>
-<a href="#一、HDFS概述">一、HDFS概述</a><br/>
+<a href="#一、MapReduce概述">一、MapReduce概述</a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<a href="#1.1 MapReduce 简介">1.1 MapReduce 简介</a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<a href="#1.2 MapReduce 核心编程思想">1.2 MapReduce 核心编程思想</a><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;<a href="#1.3 常用数据序列化类型">1.3 常用数据序列化类型</a><br/>
@@ -23,6 +23,7 @@
     &nbsp;&nbsp;&nbsp;&nbsp;<a href="#3.9 数据清洗（ETL）">3.9 数据清洗（ETL）</a><br/>
     &nbsp;&nbsp;&nbsp;&nbsp;<a href="#3.10 MapReduce开发总结">3.10 MapReduce开发总结</a><br/>
 </nav>
+
 
 
 

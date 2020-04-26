@@ -29,7 +29,7 @@
 
 #### [2.MapReduce--分布式计算框架](https://github.com/bigdata2018/BigData-Hadoop/blob/master/notes/Hadoop-HDFS.md)
 
-#### [3.YARN--集群资源管理器](https://github.com/bigdata2018/BigData-Hadoop/blob/master/notes/Hadoop-HDFS.md)
+#### [3.YARN--资源调度器](https://github.com/bigdata2018/BigData-Hadoop/blob/master/notes/Hadoop-HDFS.md)
 
 
 
