@@ -1,15 +1,15 @@
 # HDFS--分布式文件存储系统
 
 <nav>
-<a href="#一、HDFS简介">一、HDFS简介</a><br/>
-<a href="#二、HDFS 设计原理">二、HDFS 设计原理</a><br/>
-    <a href="#三、HDFS的Shell操作（重点）">三、HDFS的Shell操作（重点）</a><br/>
-    <a href="#四、HDFS客户端操作（重点）">四、HDFS客户端操作（重点）</a><br/>
-    <a href="#五、HDFS的API操作">五、HDFS的API操作</a><br/>
-    <a href="#六、HDFS的数据流（重点）">六、HDFS的数据流（重点）</a><br/>
-    <a href="#七、NameNode和SecondaryNameNode（重点）">七、NameNode和SecondaryNameNode（重点）</a><br/>
-    <a href="#八、DataNode(重点)">八、DataNode(重点)</a><br/>
-    <a href="#九、小文件存档">九、小文件存档</a><br/>
+<a href="#一hdfs简介">一、HDFS简介</a><br/>
+<a href="#二hdfs-设计原理">二、HDFS 设计原理</a><br/>
+    <a href="#三hdfs的shell操作重点">三、HDFS的Shell操作（重点）</a><br/>
+    <a href="#四hdfs客户端操作重点">四、HDFS客户端操作（重点）</a><br/>
+    <a href="#五hdfs的api操作">五、HDFS的API操作</a><br/>
+    <a href="#六hdfs的数据流重点）">六、HDFS的数据流（重点）</a><br/>
+    <a href="#七namenode和secondarynamenode重点">七、NameNode和SecondaryNameNode（重点）</a><br/>
+    <a href="#八datanode重点">八、DataNode(重点)</a><br/>
+    <a href="#九小文件存档">九、小文件存档</a><br/>
 </nav>
 
 
