@@ -1,24 +1,24 @@
 # Yarn--资源调度器
 
 <nav>
-<a href="#一、Yarn基本架构">一、Yarn基本架构</a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#1.1 Yarn简介">1.1 Yarn简介</a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#1.2 Yarn基本架构">1.2 Yarn基本架构</a><br/>
-<a href="#二、Yarn工作机制">二、Yarn工作机制</a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#2.1 Yarn运行机制">2.1 Yarn运行机制</a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#2.2 工作机制详解">2.2 工作机制详解（Writable）</a><br/>
-<a href="#三、作业提交全过程">三、作业提交全过程</a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#3.1 作业提交过程之YARN">3.1 作业提交过程之YARN</a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#3.2 作业提交过程之MapReduce">3.2 作业提交过程之MapReduce</a><br/>
-<a href="#四、资源调度器">四、资源调度器</a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#4.1 先进先出调度器（FIFO）">4.1 先进先出调度器（FIFO）</a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#4.2 容量调度器（Capacity Scheduler）">4.2 容量调度器（Capacity Scheduler）</a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#4.3 公平调度器（Fair Scheduler）">4.3 公平调度器（Fair Scheduler）</a><br/>
-<a href="#五、容量调度器多队列提交案例">五、容量调度器多队列提交案例</a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#5.1 需求">5.1 需求</a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#5.2 配置多队列的容量调度器">5.2 配置多队列的容量调度器</a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#5.3 向Hive队列提交任务">5.3 向Hive队列提交任务</a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#5.4 任务的推测执行">5.4 任务的推测执行</a><br/>
+<a href="#一yarn基本架构">一、Yarn基本架构</a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#11-yarn简介">1.1 Yarn简介</a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#12-yarn基本架构">1.2 Yarn基本架构</a><br/>
+<a href="#二yarn工作机制">二、Yarn工作机制</a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#21-yarn运行机制">2.1 Yarn运行机制</a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#22-工作机制详解">2.2 工作机制详解（Writable）</a><br/>
+<a href="#三作业提交全过程">三、作业提交全过程</a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#31-作业提交过程之yarn">3.1 作业提交过程之YARN</a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#32-作业提交过程之mapreduce">3.2 作业提交过程之MapReduce</a><br/>
+<a href="#四资源调度器">四、资源调度器</a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#41-先进先出调度器fifo">4.1 先进先出调度器（FIFO）</a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#42-容量调度器capacity-scheduler">4.2 容量调度器（Capacity Scheduler）</a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#43-公平调度器fair-scheduler">4.3 公平调度器（Fair Scheduler）</a><br/>
+<a href="#五容量调度器多队列提交案例">五、容量调度器多队列提交案例</a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#51-需求">5.1 需求</a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#52-配置多队列的容量调度器">5.2 配置多队列的容量调度器</a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#53-向hive队列提交任务">5.3 向Hive队列提交任务</a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#54-任务的推测执行">5.4 任务的推测执行</a><br/>
 </nav>
 
 
