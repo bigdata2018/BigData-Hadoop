@@ -57,7 +57,7 @@
 
 ### 1.2 MapReduce 核心编程思想
 
-![MapReduce1-5](E:\BigData-Hadoop\picture\MapReduce1-5.png)
+![MapReduce1-5](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/MapReduce1-5.png)
 
 （1）分布式的运算程序往往需要分成至少2个阶段。
 
@@ -488,7 +488,7 @@ public class WordcountDriver {
 
 (3) 编辑任务配置
 
-![MapReduce1-10](E:\BigData-Hadoop\picture\MapReduce1-10.png)
+![MapReduce1-10](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/MapReduce1-10.png)
 
 (4) 提交并在集群查看结果
 
@@ -498,9 +498,9 @@ public class WordcountDriver {
 
 ### 2.1 序列化概述
 
-![MapReduce2-1](E:\BigData-Hadoop\picture\MapReduce2-1.png)
+![MapReduce2-1](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/MapReduce2-1.png)
 
-![MapReduce2-2](E:\BigData-Hadoop\picture\MapReduce2-2.png)
+![MapReduce2-2](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/MapReduce2-2.png)
 
 
 
@@ -812,7 +812,7 @@ args = new String[] { "e:/input/inputflow", "e:/output1" };
 
 ### 3.1  InputFormat数据输入
 
-![MapReduce3-1](E:\BigData-Hadoop\picture\MapReduce3-1.png)
+![MapReduce3-1](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/MapReduce3-1.png)
 
 
 
@@ -832,7 +832,7 @@ MapTask的并行度决定Map阶段的任务处理并发度，进而影响到整�
 
 MapTask并行度决定机制图：
 
-![MapReduce3-2](E:\BigData-Hadoop\picture\MapReduce3-2.png)
+![MapReduce3-2](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/MapReduce3-2.png)
 
 **3.1.2 Job提交流程源码和切片源码详解**
 
@@ -877,13 +877,13 @@ status = submitClient.submitJob(jobId, submitJobDir.toString(), job.getCredentia
 
 Job提交流程源码分析图：
 
-![MapReduce3-3](E:\BigData-Hadoop\picture\MapReduce3-3.png)
+![MapReduce3-3](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/MapReduce3-3.png)
 
 2．FileInputFormat切片源码解析(input.getSplits(job))
 
 FileInputFormat切片机制图：
 
-![MapReduce3-4](E:\BigData-Hadoop\picture\MapReduce3-4.png)
+![MapReduce3-4](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/MapReduce3-4.png)
 
 
 
@@ -891,27 +891,27 @@ FileInputFormat切片机制图：
 
 FileInputFormat切片机制：
 
-![MapReduce3-5](E:\BigData-Hadoop\picture\MapReduce3-5.png)
+![MapReduce3-5](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/MapReduce3-5.png)
 
 FileInputFormat切片大小参数配置：
 
-![MapReduce3-6](E:\BigData-Hadoop\picture\MapReduce3-6.png)
+![MapReduce3-6](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/MapReduce3-6.png)
 
 
 
 **3.1.4 FileInputFormat实现类**
 
-![MapReduce3-7](E:\BigData-Hadoop\picture\MapReduce3-7.png)
+![MapReduce3-7](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/MapReduce3-7.png)
 
-![MapReduce3-8](E:\BigData-Hadoop\picture\MapReduce3-8.png)
+![MapReduce3-8](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/MapReduce3-8.png)
 
 KeyValueTextInputFormat：
 
-![MapReduce3-9](E:\BigData-Hadoop\picture\MapReduce3-9.png)
+![MapReduce3-9](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/MapReduce3-9.png)
 
 NLineInputFormat：
 
-![MapReduce3-10](E:\BigData-Hadoop\picture\MapReduce3-10.png)
+![MapReduce3-10](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/MapReduce3-10.png)
 
 
 
@@ -935,7 +935,7 @@ CombineTextInputFormat.setMaxInputSplitSize(job, 4194304);// 4m
 
 CombineTextInputFormat切片机制：
 
-![MapReduce3-11](E:\BigData-Hadoop\picture\MapReduce3-11.png)
+![MapReduce3-11](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/MapReduce3-11.png)
 
 （1）虚拟存储过程：
 
@@ -1043,7 +1043,7 @@ xihuan	2
 
 **2．需求分析**
 
-![MapReduce3-12](E:\BigData-Hadoop\picture\MapReduce3-12.png)
+![MapReduce3-12](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/MapReduce3-12.png)
 
 **3．代码实现**
 
@@ -1189,7 +1189,7 @@ Number of splits:4
 
 **2．需求分析**
 
-![MapReduce3-13](E:\BigData-Hadoop\picture\MapReduce3-13.png)
+![MapReduce3-13](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/MapReduce3-13.png)
 
 **3．代码实现**
 
@@ -1333,13 +1333,13 @@ xihuan hadoop banzhang
 
 （2）输出结果的切片数，如下图所示：
 
-![MapReduce3-14](E:\BigData-Hadoop\picture\MapReduce3-14.png)
+![MapReduce3-14](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/MapReduce3-14.png)
 
 
 
 **3.1.9 自定义InputFormat**
 
-![MapReduce3-15](E:\BigData-Hadoop\picture\MapReduce3-15.png)
+![MapReduce3-15](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/MapReduce3-15.png)
 
 **3.1.10 自定义InputFormat案例实操**
 
@@ -1382,7 +1382,7 @@ part-r-00000
 
 **2．需求分析**
 
-![MapReduce3-16](E:\BigData-Hadoop\picture\MapReduce3-16.png)
+![MapReduce3-16](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/MapReduce3-16.png)
 
 **3．程序实现**
 
@@ -1619,9 +1619,9 @@ public class SequenceFileDriver {
 
 **1．流程示意图，如图**
 
-![MapReduce3-17](E:\BigData-Hadoop\picture\MapReduce3-17.png)
+![MapReduce3-17](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/MapReduce3-17.png)
 
-![MapReduce3-18](E:\BigData-Hadoop\picture\MapReduce3-18.png)
+![MapReduce3-18](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/MapReduce3-18.png)
 
 
 
@@ -1655,7 +1655,7 @@ Shuffle中的缓冲区大小会影响到MapReduce程序的执行效率，原则�
 
 **4．源码解析流程**
 
-![MapReduce3-18-1](E:\BigData-Hadoop\picture\MapReduce3-18-1.png)
+![MapReduce3-18-1](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/MapReduce3-18-1.png)
 
 
 
@@ -1665,17 +1665,17 @@ Shuffle中的缓冲区大小会影响到MapReduce程序的执行效率，原则�
 
 Map方法之后，Reduce方法之前的数据处理过程称之为Shuffle。Shuffle机制如图所示
 
-![MapReduce3-19](E:\BigData-Hadoop\picture\MapReduce3-19.png)
+![MapReduce3-19](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/MapReduce3-19.png)
 
 
 
 **3.3.2 Partition分区**
 
-![MapReduce3-20](E:\BigData-Hadoop\picture\MapReduce3-20.png)
+![MapReduce3-20](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/MapReduce3-20.png)
 
 自定义Partitioner图：
 
-![MapReduce3-21](E:\BigData-Hadoop\picture\MapReduce3-21.png)
+![MapReduce3-21](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/MapReduce3-21.png)
 
 
 
@@ -1720,7 +1720,7 @@ Map方法之后，Reduce方法之前的数据处理过程称之为Shuffle。Shuf
 
 自定义Partitioner案例需求分析:
 
-![MapReduce3-22](E:\BigData-Hadoop\picture\MapReduce3-22.png)
+![MapReduce3-22](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/MapReduce3-22.png)
 
 **3．在案例2.4的基础上，增加一个分区类**
 
@@ -1810,23 +1810,23 @@ public class FlowsumDriver {
 }
 ```
 
-![MapReduce3-23](E:\BigData-Hadoop\picture\MapReduce3-23.png)
+![MapReduce3-23](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/MapReduce3-23.png)
 
 
 
 **3.3.4 WritableComparable排序**
 
-![MapReduce3-24](E:\BigData-Hadoop\picture\MapReduce3-24.png)
+![MapReduce3-24](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/MapReduce3-24.png)
 
 排序概述:
 
-![MapReduce3-25](E:\BigData-Hadoop\picture\MapReduce3-25.png)
+![MapReduce3-25](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/MapReduce3-25.png)
 
 
 
 **1．排序的分类**
 
-![MapReduce3-26](E:\BigData-Hadoop\picture\MapReduce3-26.png)
+![MapReduce3-26](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/MapReduce3-26.png)
 
 
 
@@ -1910,7 +1910,7 @@ part-r-00000
 
 WritableComparable排序案例分析
 
-![MapReduce3-27](E:\BigData-Hadoop\picture\MapReduce3-27.png)
+![MapReduce3-27](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/MapReduce3-27.png)
 
 
 
@@ -2140,7 +2140,7 @@ public class FlowCountSortDriver {
 
 WritableComparable排序案例分析(区内排序):
 
-![MapReduce3-28](E:\BigData-Hadoop\picture\MapReduce3-28.png)
+![MapReduce3-28](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/MapReduce3-28.png)
 
 **3．案例实操WritableComparable排序案例分析(区内排序)**
 
@@ -2191,7 +2191,7 @@ job.setNumReduceTasks(5);
 
 **3.3.7 Combiner合并**
 
-![MapReduce3-29](E:\BigData-Hadoop\picture\MapReduce3-29.png)
+![MapReduce3-29](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/MapReduce3-29.png)
 
 （6）自定义Combiner实现步骤
 
@@ -2244,7 +2244,7 @@ xihuan hadoop banzhang
 
 Combiner的合并案例对每一个MapTask的输出局部汇总如下：
 
-![MapReduce3-30](E:\BigData-Hadoop\picture\MapReduce3-30.png)
+![MapReduce3-30](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/MapReduce3-30.png)
 
 
 
@@ -2303,11 +2303,11 @@ job.setCombinerClass(WordcountReducer.class);
 
 未使用前：
 
-![MapReduce3-31](E:\BigData-Hadoop\picture\MapReduce3-31.png)
+![MapReduce3-31](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/MapReduce3-31.png)
 
 使用后：
 
-![MapReduce3-32](E:\BigData-Hadoop\picture\MapReduce3-32.png)
+![MapReduce3-32](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/MapReduce3-32.png)
 
 
 
@@ -2345,7 +2345,7 @@ protected OrderGroupingComparator() {
 
 有如下订单数据
 
-![MapReduce3-32-1](E:\BigData-Hadoop\picture\MapReduce3-32-1.png)
+![MapReduce3-32-1](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/MapReduce3-32-1.png)
 
 现在需要求出每一个订单中最贵的商品。
 
@@ -2375,7 +2375,7 @@ GroupingComparator.txt
 
 **2．需求分析**
 
-![MapReduce3-33](E:\BigData-Hadoop\picture\MapReduce3-33.png)
+![MapReduce3-33](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/MapReduce3-33.png)
 
 **3．代码实现**
 
@@ -2598,7 +2598,7 @@ public class OrderDriver {
 
 MapTask工作机制如图所示
 
-![MapReduce3-34](E:\BigData-Hadoop\picture\MapReduce3-34.png)
+![MapReduce3-34](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/MapReduce3-34.png)
 
 （1）Read阶段：MapTask通过用户编写的RecordReader，从输入InputSplit中解析出一个个key/value。
 
@@ -2632,7 +2632,7 @@ MapTask工作机制如图所示
 
 ReduceTask工作机制，如图
 
-![MapReduce3-35](E:\BigData-Hadoop\picture\MapReduce3-35.png)
+![MapReduce3-35](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/MapReduce3-35.png)
 
 （1）Copy阶段：ReduceTask从各个MapTask上远程拷贝一片数据，并针对某一片数据，如果其大小超过一定阈值，则写到磁盘上，否则直接放到内存中。
 
@@ -2672,7 +2672,7 @@ job.setNumReduceTasks(4);
 
 **4．注意事项**
 
-![MapReduce3-36](E:\BigData-Hadoop\picture\MapReduce3-36.png)
+![MapReduce3-36](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/MapReduce3-36.png)
 
 
 
@@ -2682,11 +2682,11 @@ job.setNumReduceTasks(4);
 
 自定义OutputFormat
 
-![MapReduce3-37](E:\BigData-Hadoop\picture\MapReduce3-37.png)
+![MapReduce3-37](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/MapReduce3-37.png)
 
 **3.6.2 自定义OutputFormat**
 
-![MapReduce3-38](E:\BigData-Hadoop\picture\MapReduce3-38.png)
+![MapReduce3-38](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/MapReduce3-38.png)
 
 **3.6.3 自定义OutputFormat案例实操**
 
@@ -2735,7 +2735,7 @@ http://www.sohu.com
 
 自定义OutputFormat案例需求分析
 
-![MapReduce3-39](E:\BigData-Hadoop\picture\MapReduce3-39.png)
+![MapReduce3-39](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/MapReduce3-39.png)
 
 
 
@@ -2928,7 +2928,7 @@ args = new String[] { "e:/input/inputoutputformat", "e:/output2" };
 
 ReduceJoin工作原理
 
-![MapReduce3-40](E:\BigData-Hadoop\picture\MapReduce3-40.png)
+![MapReduce3-40](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/MapReduce3-40.png)
 
 **3.7.2 Reduce Join案例实操**
 
@@ -2991,7 +2991,7 @@ pd.txt
 
 通过将关联条件作为Map输出的key，将两表满足Join条件的数据并携带数据所来源的文件信息，发往同一个ReduceTask，在Reduce中进行数据的串联， Reduce端表合并如图:
 
-![MapReduce3-41](E:\BigData-Hadoop\picture\MapReduce3-41.png)
+![MapReduce3-41](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/MapReduce3-41.png)
 
 3．代码实现
 
@@ -3317,7 +3317,7 @@ MapJoin适用于关联表中有小表的情形。
 
 Map端表合并
 
-![MapReduce3-43](E:\BigData-Hadoop\picture\MapReduce3-43.png)
+![MapReduce3-43](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/MapReduce3-43.png)
 
 **3．实现代码**
 
@@ -3447,7 +3447,7 @@ public class MjMapper extends Mapper<LongWritable, Text, Text, NullWritable> {
 
 ### 3.8 计数器应用
 
-![MapReduce3-44](E:\BigData-Hadoop\picture\MapReduce3-44.png)
+![MapReduce3-44](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/MapReduce3-44.png)
 
 
 
@@ -3880,15 +3880,15 @@ public class LogDriver {
 
 在编写MapReduce程序时，需要考虑如下几个方面：
 
-![MapReduce3-45](E:\BigData-Hadoop\picture\MapReduce3-45.png)
+![MapReduce3-45](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/MapReduce3-45.png)
 
-![MapReduce3-46](E:\BigData-Hadoop\picture\MapReduce3-46.png)
+![MapReduce3-46](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/MapReduce3-46.png)
 
-![MapReduce3-47](E:\BigData-Hadoop\picture\MapReduce3-47.png)
+![MapReduce3-47](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/MapReduce3-47.png)
 
-![MapReduce3-48](E:\BigData-Hadoop\picture\MapReduce3-48.png)
+![MapReduce3-48](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/MapReduce3-48.png)
 
-![MapReduce3-49](E:\BigData-Hadoop\picture\MapReduce3-49.png)
+![MapReduce3-49](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/MapReduce3-49.png)
 
 
 
