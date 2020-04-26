@@ -1,27 +1,27 @@
 # MapReduce--分布式计算框架
 
 <nav>
-<a href="#一、MapReduce概述">一、MapReduce概述</a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#1.1 MapReduce 简介">1.1 MapReduce 简介</a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#1.2 MapReduce 核心编程思想">1.2 MapReduce 核心编程思想</a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#1.3 常用数据序列化类型">1.3 常用数据序列化类型</a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#1.4 MapReduce编程规范">1.4 MapReduce编程规范</a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#1.5 WordCount案例实操">1.5 WordCount案例实操</a><br/>
-<a href="#二 、Hadoop序列化">二 、Hadoop序列化</a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#2.1 序列化概述">2.1 序列化概述</a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#2.2 自定义bean对象实现序列化接口（Writable）">2.2 自定义bean对象实现序列化接口（Writable）</a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#2.3 序列化案例-手机流量统计">2.3 序列化案例-手机流量统计</a><br/>
-<a href="#三、MapReduce框架原理">三、MapReduce框架原理</a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#3.1  InputFormat数据输入">3.1  InputFormat数据输入</a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#3.2 MapReduce工作流程">3.2 MapReduce工作流程</a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="#3.3 Shuffle机制">3.3 Shuffle机制</a><br/>
-    &nbsp;&nbsp;&nbsp;&nbsp;<a href="#3.4 MapTask工作机制">3.4 MapTask工作机制</a><br/>
-    &nbsp;&nbsp;&nbsp;&nbsp;<a href="#3.5 ReduceTask工作机制">3.5 ReduceTask工作机制</a><br/>
-    &nbsp;&nbsp;&nbsp;&nbsp;<a href="#3.6 OutputFormat数据输出">3.6 OutputFormat数据输出</a><br/>
-    &nbsp;&nbsp;&nbsp;&nbsp;<a href="#3.7 Join多种应用">3.7 Join多种应用</a><br/>
-    &nbsp;&nbsp;&nbsp;&nbsp;<a href="#3.8 计数器应用">3.8 计数器应用</a><br/>
-    &nbsp;&nbsp;&nbsp;&nbsp;<a href="#3.9 数据清洗（ETL）">3.9 数据清洗（ETL）</a><br/>
-    &nbsp;&nbsp;&nbsp;&nbsp;<a href="#3.10 MapReduce开发总结">3.10 MapReduce开发总结</a><br/>
+<a href="#一mapreduce概述">一、MapReduce概述</a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#11-mapreduce-简介">1.1 MapReduce 简介</a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#12-mapreduce-核心编程思想">1.2 MapReduce 核心编程思想</a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#13-常用数据序列化类型">1.3 常用数据序列化类型</a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#14-mapreduce编程规范">1.4 MapReduce编程规范</a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#15-wordcount案例实操">1.5 WordCount案例实操</a><br/>
+<a href="#二-hadoop序列化">二 、Hadoop序列化</a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#21-序列化概述">2.1 序列化概述</a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#22-自定义bean对象实现序列化接口writable">2.2 自定义bean对象实现序列化接口（Writable）</a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#23-序列化案例-手机流量统计">2.3 序列化案例-手机流量统计</a><br/>
+<a href="#三mapreduce框架原理">三、MapReduce框架原理</a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#31--inputformat数据输入">3.1  InputFormat数据输入</a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#32-mapreduce工作流程">3.2 MapReduce工作流程</a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#33-shuffle机制">3.3 Shuffle机制</a><br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;<a href="#34-maptask工作机制">3.4 MapTask工作机制</a><br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;<a href="#35-reducetask工作机制">3.5 ReduceTask工作机制</a><br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;<a href="#36-outputformat数据输出">3.6 OutputFormat数据输出</a><br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;<a href="#37-join多种应用">3.7 Join多种应用</a><br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;<a href="#38-计数器应用">3.8 计数器应用</a><br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;<a href="#39-数据清洗etl">3.9 数据清洗（ETL）</a><br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;<a href="#310-mapreduce开发总结">3.10 MapReduce开发总结</a><br/>
 </nav>
 
 
