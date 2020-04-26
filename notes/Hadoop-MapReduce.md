@@ -212,7 +212,7 @@ xue	1
 (1) 编写Mapper类
 
 ~~~java
-package com.atguigu.mapreduce;
+package com.cto15.mapreduce;
 import java.io.IOException;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.LongWritable;
@@ -246,7 +246,7 @@ public class WordcountMapper extends Mapper<LongWritable, Text, Text, IntWritabl
 (2) 编写Reducer类
 
 ~~~java
-package com.atguigu.mapreduce.wordcount;
+package com.cto15.mapreduce.wordcount;
 import java.io.IOException;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
@@ -276,7 +276,7 @@ IntWritable v = new IntWritable();
 (3) 编写Driver驱动类
 
 ~~~java
-package com.atguigu.mapreduce.wordcount;
+package com.cto15.mapreduce.wordcount;
 import java.io.IOException;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
@@ -335,7 +335,7 @@ public class WordcountDriver {
 
 (1) 用maven打jar包，如果有需要一并打进去的依赖，需要添加打包插件 
 
-注意：<mainClass>com.atguigu.mr.WordcountDriver</mainClass>部分需要替换为自己工程主类
+注意：<mainClass>com.cto15.mr.WordcountDriver</mainClass>部分需要替换为自己工程主类
 
 ~~~java
 <build>
@@ -356,7 +356,7 @@ public class WordcountDriver {
 					</descriptorRefs>
 					<archive>
 						<manifest>
-							<mainClass>com.atguigu.mr.WordcountDriver</mainClass>
+							<mainClass>com.cto15.mr.WordcountDriver</mainClass>
 						</manifest>
 					</archive>
 				</configuration>
@@ -385,8 +385,8 @@ public class WordcountDriver {
 (4) 执行WordCount程序
 
 ~~~shell
-[atguigu@hadoop102 software]$ hadoop jar  wc.jar
- com.atguigu.wordcount.WordcountDriver /user/atguigu/input /user/atguigu/output
+[cto15@hadoop102 software]$ hadoop jar  wc.jar
+ com.cto15.wordcount.WordcountDriver /user/cto15/input /user/cto15/output
 ~~~
 
 
@@ -566,18 +566,18 @@ public int compareTo(FlowBean o) {
 （1）输入数据 phone_data.txt
 
 ~~~
-1	13736230513	192.196.100.1	www.atguigu.com	2481	24681	200
+1	13736230513	192.196.100.1	www.cto15.com	2481	24681	200
 2	13846544121	192.196.100.2			264	0	200
 3 	13956435636	192.196.100.3			132	1512	200
 4 	13966251146	192.168.100.1			240	0	404
-5 	18271575951	192.168.100.2	www.atguigu.com	1527	2106	200
-6 	84188413	192.168.100.3	www.atguigu.com	4116	1432	200
+5 	18271575951	192.168.100.2	www.cto15.com	1527	2106	200
+6 	84188413	192.168.100.3	www.cto15.com	4116	1432	200
 7 	13590439668	192.168.100.4			1116	954	200
 8 	15910133277	192.168.100.5	www.hao123.com	3156	2936	200
 9 	13729199489	192.168.100.6			240	0	200
 10 	13630577991	192.168.100.7	www.shouhu.com	6960	690	200
 11 	15043685818	192.168.100.8	www.baidu.com	3659	3538	200
-12 	15959002129	192.168.100.9	www.atguigu.com	1938	180	500
+12 	15959002129	192.168.100.9	www.cto15.com	1938	180	500
 13 	13560439638	192.168.100.10			918	4938	200
 14 	13470253144	192.168.100.11			180	180	200
 15 	13682846555	192.168.100.12	www.qq.com	1938	2910	200
@@ -611,7 +611,7 @@ id	手机号码		网络ip			上行流量  下行流量     网络状态码
 （1）编写流量统计的Bean对象
 
 ~~~java
-package com.atguigu.mapreduce.flowsum;
+package com.cto15.mapreduce.flowsum;
 import java.io.DataInput;
 import java.io.DataOutput;
 import java.io.IOException;
@@ -688,7 +688,7 @@ public class FlowBean implements Writable{
 （2）编写Mapper类
 
 ```java
-package com.atguigu.mapreduce.flowsum;
+package com.cto15.mapreduce.flowsum;
 import java.io.IOException;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
@@ -728,7 +728,7 @@ public class FlowCountMapper extends Mapper<LongWritable, Text, Text, FlowBean>{
 （3）编写Reducer类
 
 ```java
-package com.atguigu.mapreduce.flowsum;
+package com.cto15.mapreduce.flowsum;
 import java.io.IOException;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Reducer;
@@ -759,7 +759,7 @@ public class FlowCountReducer extends Reducer<Text, FlowBean, Text, FlowBean> {
 （4）编写Driver驱动类
 
 ```java
-package com.atguigu.mapreduce.flowsum;
+package com.cto15.mapreduce.flowsum;
 import java.io.IOException;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
@@ -1049,7 +1049,7 @@ xihuan	2
 （1）编写Mapper类
 
 ```java
-package com.atguigu.mapreduce.KeyValueTextInputFormat;
+package com.cto15.mapreduce.KeyValueTextInputFormat;
 import java.io.IOException;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
@@ -1075,7 +1075,7 @@ public class KVTextMapper extends Mapper<Text, Text, Text, LongWritable>{
 （2）编写Reducer类
 
 ```java
-package com.atguigu.mapreduce.KeyValueTextInputFormat;
+package com.cto15.mapreduce.KeyValueTextInputFormat;
 import java.io.IOException;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
@@ -1106,7 +1106,7 @@ public class KVTextReducer extends Reducer<Text, LongWritable, Text, LongWritabl
 （3）编写Driver类
 
 ```java
-package com.atguigu.mapreduce.keyvaleTextInputFormat;
+package com.cto15.mapreduce.keyvaleTextInputFormat;
 import java.io.IOException;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
@@ -1195,7 +1195,7 @@ Number of splits:4
 （1）编写Mapper类
 
 ```java
-package com.atguigu.mapreduce.nline;
+package com.cto15.mapreduce.nline;
 import java.io.IOException;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
@@ -1229,7 +1229,7 @@ public class NLineMapper extends Mapper<LongWritable, Text, Text, LongWritable>{
 （2）编写Reducer类
 
 ```java
-package com.atguigu.mapreduce.nline;
+package com.cto15.mapreduce.nline;
 import java.io.IOException;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
@@ -1260,7 +1260,7 @@ public class NLineReducer extends Reducer<Text, LongWritable, Text, LongWritable
 （3）编写Driver类
 
 ```java
-package com.atguigu.mapreduce.nline;
+package com.cto15.mapreduce.nline;
 import java.io.IOException;
 import java.net.URISyntaxException;
 import org.apache.hadoop.conf.Configuration;
@@ -1388,7 +1388,7 @@ part-r-00000
 （1）自定义InputFromat
 
 ```java
-package com.atguigu.mapreduce.inputformat;
+package com.cto15.mapreduce.inputformat;
 import java.io.IOException;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.BytesWritable;
@@ -1421,7 +1421,7 @@ public class WholeFileInputformat extends FileInputFormat<Text, BytesWritable>{
 （2）自定义RecordReader类
 
 ```java
-package com.atguigu.mapreduce.inputformat;
+package com.cto15.mapreduce.inputformat;
 import java.io.IOException;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.FSDataInputStream;
@@ -1520,7 +1520,7 @@ k.set(name);
 （3）编写SequenceFileMapper类处理流程
 
 ```java
-package com.atguigu.mapreduce.inputformat;
+package com.cto15.mapreduce.inputformat;
 import java.io.IOException;
 import org.apache.hadoop.io.BytesWritable;
 import org.apache.hadoop.io.NullWritable;
@@ -1541,7 +1541,7 @@ public class SequenceFileMapper extends Mapper<Text, BytesWritable, Text, BytesW
 （4）编写SequenceFileReducer类处理流程
 
 ```java
-package com.atguigu.mapreduce.inputformat;
+package com.cto15.mapreduce.inputformat;
 import java.io.IOException;
 import org.apache.hadoop.io.BytesWritable;
 import org.apache.hadoop.io.Text;
@@ -1560,7 +1560,7 @@ public class SequenceFileReducer extends Reducer<Text, BytesWritable, Text, Byte
 （5）编写SequenceFileDriver类处理流程
 
 ```java
-package com.atguigu.mapreduce.inputformat;
+package com.cto15.mapreduce.inputformat;
 import java.io.IOException;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
@@ -1687,18 +1687,18 @@ Map方法之后，Reduce方法之前的数据处理过程称之为Shuffle。Shuf
 （1）输入数据phone_data.txt
 
 ```
-1	13736230513	192.196.100.1	www.atguigu.com	2481	24681	200
+1	13736230513	192.196.100.1	www.cto15.com	2481	24681	200
 2	13846544121	192.196.100.2			264	0	200
 3 	13956435636	192.196.100.3			132	1512	200
 4 	13966251146	192.168.100.1			240	0	404
-5 	18271575951	192.168.100.2	www.atguigu.com	1527	2106	200
-6 	84188413	192.168.100.3	www.atguigu.com	4116	1432	200
+5 	18271575951	192.168.100.2	www.cto15.com	1527	2106	200
+6 	84188413	192.168.100.3	www.cto15.com	4116	1432	200
 7 	13590439668	192.168.100.4			1116	954	200
 8 	15910133277	192.168.100.5	www.hao123.com	3156	2936	200
 9 	13729199489	192.168.100.6			240	0	200
 10 	13630577991	192.168.100.7	www.shouhu.com	6960	690	200
 11 	15043685818	192.168.100.8	www.baidu.com	3659	3538	200
-12 	15959002129	192.168.100.9	www.atguigu.com	1938	180	500
+12 	15959002129	192.168.100.9	www.cto15.com	1938	180	500
 13 	13560439638	192.168.100.10			918	4938	200
 14 	13470253144	192.168.100.11			180	180	200
 15 	13682846555	192.168.100.12	www.qq.com	1938	2910	200
@@ -1724,7 +1724,7 @@ Map方法之后，Reduce方法之前的数据处理过程称之为Shuffle。Shuf
 **3．在案例2.4的基础上，增加一个分区类**
 
 ```java
-package com.atguigu.mapreduce.flowsum;
+package com.cto15.mapreduce.flowsum;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Partitioner;
 
@@ -1757,7 +1757,7 @@ public class ProvincePartitioner extends Partitioner<Text, FlowBean> {
 在驱动函数中增加自定义数据分区设置和ReduceTask设置
 
 ```java
-package com.atguigu.mapreduce.flowsum;
+package com.cto15.mapreduce.flowsum;
 import java.io.IOException;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
@@ -1865,18 +1865,18 @@ public int compareTo(FlowBean o) {
 （1）输入数据 phone_data.txt
 
 ```
-1	13736230513	192.196.100.1	www.atguigu.com	2481	24681	200
+1	13736230513	192.196.100.1	www.cto15.com	2481	24681	200
 2	13846544121	192.196.100.2			264	0	200
 3 	13956435636	192.196.100.3			132	1512	200
 4 	13966251146	192.168.100.1			240	0	404
-5 	18271575951	192.168.100.2	www.atguigu.com	1527	2106	200
-6 	84188413	192.168.100.3	www.atguigu.com	4116	1432	200
+5 	18271575951	192.168.100.2	www.cto15.com	1527	2106	200
+6 	84188413	192.168.100.3	www.cto15.com	4116	1432	200
 7 	13590439668	192.168.100.4			1116	954	200
 8 	15910133277	192.168.100.5	www.hao123.com	3156	2936	200
 9 	13729199489	192.168.100.6			240	0	200
 10 	13630577991	192.168.100.7	www.shouhu.com	6960	690	200
 11 	15043685818	192.168.100.8	www.baidu.com	3659	3538	200
-12 	15959002129	192.168.100.9	www.atguigu.com	1938	180	500
+12 	15959002129	192.168.100.9	www.cto15.com	1938	180	500
 13 	13560439638	192.168.100.10			918	4938	200
 14 	13470253144	192.168.100.11			180	180	200
 15 	13682846555	192.168.100.12	www.qq.com	1938	2910	200
@@ -1918,7 +1918,7 @@ WritableComparable排序案例分析
 （1）FlowBean 
 
 ```java
-package com.atguigu.mapreduce.sort;
+package com.cto15.mapreduce.sort;
 import java.io.DataInput;
 import java.io.DataOutput;
 import java.io.IOException;
@@ -2023,7 +2023,7 @@ public class FlowBean implements WritableComparable<FlowBean> {
 （2）编写Mapper类
 
 ```java
-package com.atguigu.mapreduce.sort;
+package com.cto15.mapreduce.sort;
 import java.io.IOException;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
@@ -2060,7 +2060,7 @@ public class FlowCountSortMapper extends Mapper<LongWritable, Text, FlowBean, Te
 （3）编写Reducer类
 
 ```java
-package com.atguigu.mapreduce.sort;
+package com.cto15.mapreduce.sort;
 import java.io.IOException;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Reducer;
@@ -2081,7 +2081,7 @@ public class FlowCountSortReducer extends Reducer<FlowBean, Text, Text, FlowBean
 （4）编写Driver类
 
 ```java
-package com.atguigu.mapreduce.sort;
+package com.cto15.mapreduce.sort;
 import java.io.IOException;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
@@ -2146,7 +2146,7 @@ WritableComparable排序案例分析(区内排序):
 （1）增加自定义分区类
 
 ```java
-package com.atguigu.mapreduce.sort;
+package com.cto15.mapreduce.sort;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Partitioner;
 
@@ -2252,7 +2252,7 @@ Combiner的合并案例对每一个MapTask的输出局部汇总如下：
 （1）增加一个WordcountCombiner类继承Reducer
 
 ```java
-package com.atguigu.mr.combiner;
+package com.cto15.mr.combiner;
 import java.io.IOException;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
@@ -2381,7 +2381,7 @@ GroupingComparator.txt
 （1）定义订单信息OrderBean类
 
 ```java
-package com.atguigu.mapreduce.order;
+package com.cto15.mapreduce.order;
 import java.io.DataInput;
 import java.io.DataOutput;
 import java.io.IOException;
@@ -2458,7 +2458,7 @@ public class OrderBean implements WritableComparable<OrderBean> {
 （2）编写OrderSortMapper类
 
 ```java
-package com.atguigu.mapreduce.order;
+package com.cto15.mapreduce.order;
 import java.io.IOException;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.NullWritable;
@@ -2491,7 +2491,7 @@ public class OrderMapper extends Mapper<LongWritable, Text, OrderBean, NullWrita
 （3）编写OrderSortGroupingComparator类
 
 ```java
-package com.atguigu.mapreduce.order;
+package com.cto15.mapreduce.order;
 import org.apache.hadoop.io.WritableComparable;
 import org.apache.hadoop.io.WritableComparator;
 
@@ -2524,7 +2524,7 @@ public class OrderGroupingComparator extends WritableComparator {
 （4）编写OrderSortReducer类
 
 ```java
-package com.atguigu.mapreduce.order;
+package com.cto15.mapreduce.order;
 import java.io.IOException;
 import org.apache.hadoop.io.NullWritable;
 import org.apache.hadoop.mapreduce.Reducer;
@@ -2542,7 +2542,7 @@ public class OrderReducer extends Reducer<OrderBean, NullWritable, OrderBean, Nu
 （5）编写OrderSortDriver类
 
 ```java
-package com.atguigu.mapreduce.order;
+package com.cto15.mapreduce.order;
 import java.io.IOException;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
@@ -2691,7 +2691,7 @@ job.setNumReduceTasks(4);
 
 **1．需求**
 
-过滤输入的log日志，包含atguigu的网站输出到e:/atguigu.log，不包含atguigu的网站输出到e:/other.log。
+过滤输入的log日志，包含cto15的网站输出到e:/cto15.log，不包含cto15的网站输出到e:/other.log。
 
 （1）输入数据
 
@@ -2701,7 +2701,7 @@ log.txt
 http://www.baidu.com
 http://www.google.com
 http://cn.bing.com
-http://www.atguigu.com
+http://www.cto15.com
 http://www.sohu.com
 http://www.sina.com
 http://www.sin2a.com
@@ -2711,10 +2711,10 @@ http://www.sindsafa.com
 
 （2）期望输出数据
 
-atguigu.log
+cto15.log
 
 ```
-http://www.atguigu.com
+http://www.cto15.com
 ```
 
 other.log
@@ -2743,7 +2743,7 @@ http://www.sohu.com
 （1）编写FilterMapper类
 
 ```java
-package com.atguigu.mapreduce.outputformat;
+package com.cto15.mapreduce.outputformat;
 import java.io.IOException;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.NullWritable;
@@ -2764,7 +2764,7 @@ public class FilterMapper extends Mapper<LongWritable, Text, Text, NullWritable>
 （2）编写FilterReducer类
 
 ```java
-package com.atguigu.mapreduce.outputformat;
+package com.cto15.mapreduce.outputformat;
 import java.io.IOException;
 import org.apache.hadoop.io.NullWritable;
 import org.apache.hadoop.io.Text;
@@ -2795,7 +2795,7 @@ Text k = new Text();
 （3）自定义一个OutputFormat类
 
 ```java
-package com.atguigu.mapreduce.outputformat;
+package com.cto15.mapreduce.outputformat;
 import java.io.IOException;
 import org.apache.hadoop.io.NullWritable;
 import org.apache.hadoop.io.Text;
@@ -2817,7 +2817,7 @@ public class FilterOutputFormat extends FileOutputFormat<Text, NullWritable>{
 （4）编写RecordWriter类
 
 ```java
-package com.atguigu.mapreduce.outputformat;
+package com.cto15.mapreduce.outputformat;
 import java.io.IOException;
 import org.apache.hadoop.fs.FSDataOutputStream;
 import org.apache.hadoop.fs.FileSystem;
@@ -2829,7 +2829,7 @@ import org.apache.hadoop.mapreduce.TaskAttemptContext;
 
 public class FilterRecordWriter extends RecordWriter<Text, NullWritable> {
 
-	FSDataOutputStream atguiguOut = null;
+	FSDataOutputStream cto15Out = null;
 	FSDataOutputStream otherOut = null;
 
 	public FilterRecordWriter(TaskAttemptContext job) {
@@ -2841,11 +2841,11 @@ public class FilterRecordWriter extends RecordWriter<Text, NullWritable> {
 			fs = FileSystem.get(job.getConfiguration());
 
 			// 2 创建输出文件路径
-			Path atguiguPath = new Path("e:/atguigu.log");
+			Path cto15Path = new Path("e:/cto15.log");
 			Path otherPath = new Path("e:/other.log");
 
 			// 3 创建输出流
-			atguiguOut = fs.create(atguiguPath);
+			cto15Out = fs.create(cto15Path);
 			otherOut = fs.create(otherPath);
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -2855,9 +2855,9 @@ public class FilterRecordWriter extends RecordWriter<Text, NullWritable> {
 	@Override
 	public void write(Text key, NullWritable value) throws IOException, InterruptedException {
 
-		// 判断是否包含“atguigu”输出到不同文件
-		if (key.toString().contains("atguigu")) {
-			atguiguOut.write(key.toString().getBytes());
+		// 判断是否包含“cto15”输出到不同文件
+		if (key.toString().contains("cto15")) {
+			cto15Out.write(key.toString().getBytes());
 		} else {
 			otherOut.write(key.toString().getBytes());
 		}
@@ -2867,7 +2867,7 @@ public class FilterRecordWriter extends RecordWriter<Text, NullWritable> {
 	public void close(TaskAttemptContext context) throws IOException, InterruptedException {
 
 		// 关闭资源
-IOUtils.closeStream(atguiguOut);
+IOUtils.closeStream(cto15Out);
 		IOUtils.closeStream(otherOut);	}
 }
 ```
@@ -2875,7 +2875,7 @@ IOUtils.closeStream(atguiguOut);
 （5）编写FilterDriver类
 
 ```java
-package com.atguigu.mapreduce.outputformat;
+package com.cto15.mapreduce.outputformat;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.NullWritable;
@@ -2997,7 +2997,7 @@ pd.txt
 (1）创建商品和订合并后的Bean类
 
 ```java
-package com.atguigu.reducejoin;
+package com.cto15.reducejoin;
 
 import org.apache.hadoop.io.WritableComparable;
 
@@ -3080,7 +3080,7 @@ public class OrderBean implements WritableComparable<OrderBean> {
 (2）编写TableMapper类
 
 ```java
-package com.atguigu.reducejoin;
+package com.cto15.reducejoin;
 
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.NullWritable;
@@ -3129,7 +3129,7 @@ public class OrderMapper extends Mapper<LongWritable, Text, OrderBean, NullWrita
 (3）编写TableReducer类
 
 ```java
-package com.atguigu.reducejoin;
+package com.cto15.reducejoin;
 
 import org.apache.hadoop.io.NullWritable;
 import org.apache.hadoop.mapreduce.Reducer;
@@ -3162,7 +3162,7 @@ public class OrderReducer extends Reducer<OrderBean, NullWritable, OrderBean, Nu
 (4）编写TableDriver类
 
 ```java
-package com.atguigu.reducejoin;
+package com.cto15.reducejoin;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
@@ -3374,7 +3374,7 @@ args = new String[]{"e:/input/inputtable2", "e:/output1"};
 （2）读取缓存的文件数据
 
 ```java
-package com.atguigu.mapjoin;
+package com.cto15.mapjoin;
 
 import org.apache.commons.lang.StringUtils;
 import org.apache.hadoop.fs.FSDataInputStream;
@@ -3510,7 +3510,7 @@ web.log
 （1）编写LogMapper类
 
 ```java
-package com.atguigu.mapreduce.weblog;
+package com.cto15.mapreduce.weblog;
 import java.io.IOException;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.NullWritable;
@@ -3565,7 +3565,7 @@ public class LogMapper extends Mapper<LongWritable, Text, Text, NullWritable>{
 （2）编写LogDriver类
 
 ```java
-package com.atguigu.mapreduce.weblog;
+package com.cto15.mapreduce.weblog;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.NullWritable;
@@ -3659,7 +3659,7 @@ public class LogDriver {
 （1）定义一个bean，用来记录日志数据中的各数据字段
 
 ```java
-package com.atguigu.mapreduce.log;
+package com.cto15.mapreduce.log;
 
 public class LogBean {
 	private String remote_addr;// 记录客户端的ip地址
@@ -3767,7 +3767,7 @@ public class LogBean {
 （2）编写LogMapper类
 
 ```java
-package com.atguigu.mapreduce.log;
+package com.cto15.mapreduce.log;
 import java.io.IOException;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.NullWritable;
@@ -3837,7 +3837,7 @@ public class LogMapper extends Mapper<LongWritable, Text, Text, NullWritable>{
 （3）编写LogDriver类
 
 ```java
-package com.atguigu.mapreduce.log;
+package com.cto15.mapreduce.log;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.NullWritable;
