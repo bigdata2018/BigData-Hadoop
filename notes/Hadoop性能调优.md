@@ -3,7 +3,7 @@
 <nav>
 <a href="#一hdfs小文件优化方法">一、HDFS小文件优化方法</a><br/>
 <a href="#二mapreduce-优化">二、MapReduce 优化</a><br/>
-<a href="#三常用的调优参数">三 、常用的调优参数</a><br/>
+<a href="#三-常用的调优参数">三 、常用的调优参数</a><br/>
 </nav>
 
 
