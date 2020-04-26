@@ -45,11 +45,11 @@ status = submitClient.submitJob(jobId, submitJobDir.toString(), job.getCredentia
 
 Job提交流程源码分析图：
 
-![MapReduce3-3](E:\BigData-Hadoop\picture\MapReduce3-3.png)
+![MapReduce3-3](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/MapReduce3-3.png)
 
 2．FileInputFormat切片源码解析(input.getSplits(job))
 
 FileInputFormat切片机制图：
 
-![MapReduce3-4](E:\BigData-Hadoop\picture\MapReduce3-4.png)
+![MapReduce3-4](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/MapReduce3-4.png)
 
