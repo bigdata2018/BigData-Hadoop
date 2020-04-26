@@ -30,11 +30,11 @@
 
 ### 2.1 HDFS 架构
 
-![HDFS1-4](E:\BigData-Hadoop\picture\HDFS1-4.png)
+![HDFS1-4](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/HDFS1-4.png)
 
 
 
-![HDFS1-5](E:\BigData-Hadoop\picture\HDFS1-5.png)
+![HDFS1-5](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/HDFS1-5.png)
 
 
 
@@ -52,7 +52,7 @@ HDFS 的 ` 文件系统命名空间 ` 的层次结构与大多数文件系统类
 
 ### 2.4 HDFS文件块大小（重点）
 
-![HDFS1-6](E:\BigData-Hadoop\picture\HDFS1-6.png)
+![HDFS1-6](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/HDFS1-6.png)
 
 **为什么块的大小不能设太大，也不能设太小？**
 
@@ -513,7 +513,7 @@ public void testListStatus() throws IOException, InterruptedException, URISyntax
 
 ##### **1.剖析文件写入**
 
-![HDFS4-1](E:\BigData-Hadoop\picture\HDFS4-1.png)
+![HDFS4-1](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/HDFS4-1.png)
 
 （1）客户端通过Distributed FileSystem模块向NameNode请求上传文件，NameNode检查目标文件是否已存在，父目录是否存在。
 
@@ -541,7 +541,7 @@ public void testListStatus() throws IOException, InterruptedException, URISyntax
 
 例如，假设有数据中心d1机架r1中的节点n1。该节点可以表示为/d1/r1/n1。利用这种标记，这里给出四种距离描述，如图:
 
-![HDFS4-2](E:\BigData-Hadoop\picture\HDFS4-2.png)
+![HDFS4-2](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/HDFS4-2.png)
 
 
 
@@ -555,7 +555,7 @@ For the common case, when the replication factor is three, HDFS’s placement po
 
 Hadoop3.1.3副本节点选择
 
-![HDFS4-4](E:\BigData-Hadoop\picture\HDFS4-4.png)
+![HDFS4-4](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/HDFS4-4.png)
 
 
 
@@ -563,7 +563,7 @@ Hadoop3.1.3副本节点选择
 
 HDFS的读数据流程，如图：
 
-![HDFS4-5](E:\BigData-Hadoop\picture\HDFS4-5.png)
+![HDFS4-5](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/HDFS4-5.png)
 
 （1）客户端通过Distributed FileSystem向NameNode请求下载文件，NameNode通过查询元数据，找到文件块所在的DataNode地址。
 
@@ -589,7 +589,7 @@ HDFS的读数据流程，如图：
 
 NN和2NN工作机制，如图:
 
-![HDFS5-1](E:\BigData-Hadoop\picture\HDFS5-1.png)
+![HDFS5-1](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/HDFS5-1.png)
 
 1. **第一阶段：NameNode启动**
 
@@ -634,7 +634,7 @@ SecondaryNameNode首先会询问NameNode是否需要CheckPoint（触发CheckPoin
 
 **1.概念**
 
-![HDFS5-2](E:\BigData-Hadoop\picture\HDFS5-2.png)
+![HDFS5-2](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/HDFS5-2.png)
 
 **2.oiv查看Fsimage文件**
 
@@ -954,7 +954,7 @@ drwxrwxr-x. 3 nogc nogc 4096 12月 11 08:03 name2
 
 ### 8.1 DataNode工作机制
 
-![HDFS6-1](E:\BigData-Hadoop\picture\HDFS6-1.png)
+![HDFS6-1](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/HDFS6-1.png)
 
 (1）一个数据块在DataNode上以文件形式存储在磁盘上，包括两个文件，一个是数据本身，一个是元数据包括数据块的长度，块数据的校验和，以及时间戳。
 
@@ -982,13 +982,13 @@ drwxrwxr-x. 3 nogc nogc 4096 12月 11 08:03 name2
 
 5）DataNode在其文件创建后周期验证CheckSum，如图
 
-![HDFS6-2](E:\BigData-Hadoop\picture\HDFS6-2.png)
+![HDFS6-2](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/HDFS6-2.png)
 
 
 
 ### 8.3 掉线时限参数设置
 
-![HDFS6-3](E:\BigData-Hadoop\picture\HDFS6-3.png)
+![HDFS6-3](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/HDFS6-3.png)
 
 需要注意的是hdfs-site.xml 配置文件中的heartbeat.recheck.interval的单位为毫秒，dfs.heartbeat.interval的单位为秒。
 
@@ -1032,7 +1032,7 @@ drwxrwxr-x. 3 nogc nogc 4096 12月 11 08:03 name2
 [nogc@hadoop105 hadoop-3.1.3]$yarn -–daemon start nodemanager
 ~~~
 
-![HDFS6-4](E:\BigData-Hadoop\picture\HDFS6-4.png)
+![HDFS6-4](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/HDFS6-4.png)
 
 
 
@@ -1104,7 +1104,7 @@ hadoop105
 
 （5）在web端查看目前正常工作的DN节点
 
-![HDFS6-5](E:\BigData-Hadoop\picture\HDFS6-5.png)
+![HDFS6-5](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/HDFS6-5.png)
 
 ##### **2.黑名单退役**
 
@@ -1123,7 +1123,7 @@ hadoop105
 
 （3）在web端查看DN状态，105 正在退役中…进行数据的迁移
 
-![HDFS6-6](E:\BigData-Hadoop\picture\HDFS6-6.png)
+![HDFS6-6](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/HDFS6-6.png)
 
 （4）如果105也启动的NodeManager，也可以刷新yarn状态。【可选查看】
 
@@ -1139,7 +1139,7 @@ hadoop105
 
 （1）   删除blacklist的中的内容，恢复 102 103 104 105 正常工作，如图退役前DataNode节点
 
-![HDFS6-7](E:\BigData-Hadoop\picture\HDFS6-7.png)
+![HDFS6-7](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/HDFS6-7.png)
 
 （2）修改whitelist，将105删除,保留102 103 104
 
@@ -1161,7 +1161,7 @@ hadoop104
 
 （4）web端查看，发现105节点直接从集群列表中丢弃
 
-![HDFS6-8](E:\BigData-Hadoop\picture\HDFS6-8.png)
+![HDFS6-8](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/HDFS6-8.png)
 
 
 
@@ -1210,7 +1210,7 @@ drwxrwxr-x. 3 nogc nogc 4096 12月 11 08:03 name2
 
 ## 九、小文件存档
 
-![HDFS6-9](E:\BigData-Hadoop\picture\HDFS6-9.png)
+![HDFS6-9](https://github.com/bigdata2018/BigData-Hadoop/blob/master/picture/HDFS6-9.png)
 
 **3．案例实操**
 

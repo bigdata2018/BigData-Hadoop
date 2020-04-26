@@ -4,9 +4,9 @@
 ## :black_nib: 目  录
 
 <nav>
-<a href="#一、环境搭建">一、环境搭建</a><br/>
-<a href="#二、Hadoop入门">二、Hadoop入门</a><br/>
-<a href="#三、Hadoop高级">三、Hadoop高级</a><br/>
+<a href="https://github.com/bigdata2018/BigData-Hadoop#%E4%B8%80%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA">一、环境搭建</a><br/>
+<a href="https://github.com/bigdata2018/BigData-Hadoop#%E4%BA%8Chadoop%E5%85%A5%E9%97%A8%E5%88%B0%E8%BF%9B%E9%98%B6">二、Hadoop入门</a><br/>
+<a href="https://github.com/bigdata2018/BigData-Hadoop#%E4%B8%89hadoop%E9%AB%98%E7%BA%A7">三、Hadoop高级</a><br/>
 </nav>
 
 
@@ -25,11 +25,11 @@
 
 ## 二、Hadoop入门到进阶
 
-#### [1.HDFS--分布式文件存储系统 ](https://github.com/heibaiying/BigData-Notes/blob/master/notes/Hadoop-HDFS.md)
+#### [1.HDFS--分布式文件存储系统 ](https://github.com/bigdata2018/BigData-Hadoop/blob/master/notes/Hadoop-HDFS.md)
 
-#### [2.MapReduce--分布式计算框架](https://github.com/heibaiying/BigData-Notes/blob/master/notes/Hadoop-MapReduce.md)
+#### [2.MapReduce--分布式计算框架](https://github.com/bigdata2018/BigData-Hadoop/blob/master/notes/Hadoop-HDFS.md)
 
-#### [3.YARN--集群资源管理器](https://github.com/heibaiying/BigData-Notes/blob/master/notes/Hadoop-YARN.md)
+#### [3.YARN--集群资源管理器](https://github.com/bigdata2018/BigData-Hadoop/blob/master/notes/Hadoop-HDFS.md)
 
 
 
